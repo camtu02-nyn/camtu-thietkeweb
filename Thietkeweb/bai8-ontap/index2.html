@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI News</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+
+        .trai {
+            width: 200px;
+            padding: 30px 20px;
+            border-right: 1px solid #eee;
+            height: 100vh;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .trai ul {
+            list-style: none;
+        }
+
+        .trai li {
+            margin-bottom: 15px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 60px;
+        }
+
+        .topbar {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        .login-btn {
+            background: #f3f3f3;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .news h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .mucluc {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .mucluc span {
+            color: #666;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .mucluc .active {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .filter-right {
+            margin-left: auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .cards {
+            display: flex;
+
+        }
+
+        .card {
+            margin-top: 100px;
+        }
+
+        .card img {
+            width: 80%;
+            height: 200px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trai">
+        <h1 class="logo">OpenAI</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">For Business</a></li>
+                <li>For Developers</li>
+                <li>ChatGPT</li>
+                <li>Sora</li>
+                <li>Stories</li>
+                <li>Company</li>
+                <li>News</li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <header class="topbar">
+            <button class="login-btn">Log in</button>
+        </header>
+
+        <section class="news">
+            <h2>News</h2>
+
+            <div class="mucluc">
+                <span>All</span>
+                <span>Company</span>
+                <span>Research</span>
+                <span class="active">Product</span>
+                <span>Safety</span>
+                <span>Security</span>
+                <span>Global Affairs</span>
+                <div class="filter-right">
+                    <span>Filter</span>
+                    <span>Sort</span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <!-- <div class="card">
+                    <img src="./logowebsite4x_1748221195181.png">
+                </div>
+                <div class="info">
+                    <h3>Building towards age prediction</h3>
+                    <p>Safety · Sep 16, 2025</p>
+                </div> -->
+                <div class="card">
+                    <img src="./logowebsite4x_1748221195181.png">
+                    <h3>Introducing upgrades to Codex</h3>
+                    <p>Release · Sep 15, 2025</p>
+                </div>
+                <div class="card">
+                    <img src="./logowebsite4x_1748221195181.png">
+                    <h3>Introducing upgrades to Codex</h3>
+                    <p>Release · Sep 15, 2025</p>
+                </div>
+                <div class="card">
+                    <img src="./logowebsite4x_1748221195181.png">
+                    <h3>Introducing upgrades to Codex</h3>
+                    <p>Release · Sep 15, 2025</p>
+                </div>
+
+                <!-- <div class="card">
+                    <img src="./logowebsite4x_1748221195181.png">
+                </div>
+                <div class="info">
+                    <h3>Building more helpful ChatGPT experiences for everyone</h3>
+                    <p>Safety · Sep 2, 2025</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
