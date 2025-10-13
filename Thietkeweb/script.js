@@ -1,0 +1,1 @@
+document.writeln("Hello nhiều nhé hẹ hẹ hẹ");

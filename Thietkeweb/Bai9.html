@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Facebook</title>
+		<style>
+			body {
+			  margin: 0;
+			  color: white;
+			  background: #ccc;
+			}
+
+			.main {
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  height: 100vh;
+			  gap: 80px;
+			}
+			.main1 {
+				max-width: 500px;
+			}
+			.logo {
+				color: #1877f2;
+				font-size: 64px;
+				margin: 0 0 10px 0;
+			}
+			.slogan {
+				font-size: 24px;
+				line-height: 32px;
+				color: #1c1e21;
+			}
+			.main2 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.login {
+				background: #fff;
+				padding: 20px;
+				border-radius: 8px;
+				width: 360px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+			}
+			.login input {
+				padding: 14px;
+				border: 1px solid #ddd;
+				border-radius: 6px;
+				font-size: 16px;
+			}
+			.login-box{
+				background: #1877f2;
+				color: #fff;
+				padding: 15px;
+				font-size: 18px;
+				border-radius: 6px;
+			}
+			.box {
+				color: #1877f2;
+				text-align: center;
+				font-size: 14px;
+				text-decoration: none;
+				margin-top:12px;
+			}
+			.hr {
+				border-top: 1px solid #ddd;
+				margin: 10px 0;
+			}
+			.create-box {
+				background: #42b72a;
+				color: #fff;
+				padding: 14px;
+				font-size: 17px;
+				border-radius: 6px;
+				border-color: white;
+			}
+			.create-page {
+				margin-top: 20px;
+				font-size: 14px;
+				text-align: center;
+			}
+
+			.create-page a {
+				color: #1c1e21;
+				text-decoration: none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="main1">
+				<h1 class="logo">facebook</h1>
+				<p class="slogan">Facebook helps you connect and share<br>
+					with the people in your life.</p>
+			</div>
+			<div class="main2">
+				<form class="login">
+					<input type="text" placeholder="Email address or phone number" id="dangnhap"> 
+					<input type="password" placeholder="Password" id="pass">
+					<button onclick="kiemTra()" type="submit" class="login-box">Gửi</button>
+					<a href="#" class="box">Forgotten password?</a>
+					<div class="hr"></div>
+					<button type="button" class="create-box">Create new account</button>
+				</form>
+				<p class="create-page">
+					<a href="#">Create a Page</a> for a celebrity, brand or business.
+				</p>
+			</div>
+		</div>
+		<script>
+			function kiemTra(){
+				let ten = document.getElementById("dangnhap").value;
+				let mk = document.getElementById("pass").value;
+				if (ten == '' && mk == ''){
+					alert("Vui lòng nhập lại!");
+					document.getElementsByTagName('input')[0].style = "border: red solid 1px";
+					document.getElementsByTagName('input')[1].style = "border: red solid 1px";
+				else(ten == ''){
+						document.getElementsByTagName('input')[0].style = "border: red solid 1px";
+					}
+				}
+			}
+		</script>
+	</body>
+
+
+</html>

@@ -1,0 +1,119 @@
+.danhmuc {
+	width:100%;
+    background-color: pink;
+    display: flex;
+}
+body {
+    margin: 0;
+	width: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+	max-width:1180px;
+}
+.border{
+	border-right: 1px solid grey;
+}
+.noidung1 {
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+}
+.noidung_trai{
+	height: 80px;
+    width: 30%;
+    background-color: white;
+	font-size: 25px;
+	margin: 0 15px 0 0;
+}
+.noidung_giua{
+	width:25%;
+	margin:15px;
+}
+.noidung_phai{
+	height: 60px;
+    width: 40%;
+    background-color: bisque;
+	font-size: 15px;
+	margin: 15px 0 15px 15px;
+}
+.logo{
+	color: blue;
+	padding: 20px;
+}
+.noidung2{
+	height: 40px;
+    background-color: bisque;
+    display: flex;
+	gap: 30px;
+}
+.noidung2 a{
+	color: black;
+	
+}
+.noidung3 {
+    height: 320px;
+    background-color: #f1f1f2;
+    display: flex;
+	margin: 10px 0 0 0;
+}
+.noidung3-1{
+	width: 20%;
+    background-color: beige;
+	font-size: 25px;
+	margin: 0 15px 0 0;
+}
+ul{
+    list-style: none; 
+	margin:0;
+}
+.sanpham{
+	color:black;
+	font-size:15px;
+}
+.noidung3-2{
+	width: 80%;
+    background-color:white ;
+}
+.anh{
+	display:flex;
+}
+.anhsanpham{
+	width:20%;
+	border: 1px solid grey;
+	margin: 0 5px 0 0;
+}
+.anhsanpham p{
+	margin: 12px 0 0 30px;
+	color: black;
+}
+.noidung4{
+    height: 80px;
+    background-color: #f1f1f3;
+    display: flex;
+	margin: 15px 0 0 0;
+}
+.noidung4-1{
+	width: 20%;
+    background-color: tan;
+	font-size: 18px;
+	text-align: center;
+}
+.noidung4-2{
+	width: 80%;
+    background-color:teal ;
+	text-align:right;
+}
+.footer{
+	height: 67px;
+    background-color: paleturquoise;
+    display: flex;
+	font-size: 25px;
+}
+
+
+
+

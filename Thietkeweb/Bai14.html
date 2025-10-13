@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Bài 14</title>
+		<style>
+			body{
+				margin:0;
+			}
+			.anh{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+			img{
+				width: 10%;
+				margin: auto;
+			}
+			.tieude{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+			.chedo{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="anh">
+			<img src="mattroi.jpg">
+		</div>
+		<div class="tieude">
+			<h1>Chế độ sáng</h1> 
+		</div>
+		<div class="chedo">
+			<button style="font-size: xx-large;" onclick="doiCheDo()">Đổi chế độ</button>
+		</div>
+		<script>
+			let cheDo = "sang";
+			function doiCheDo() {
+				if (cheDo == "sang") {
+					document.getElementsByTagName('body')[0].style = "background-color: black";
+					document.getElementsByTagName('img')[0].src = 'mattrang.jpg';
+					document.getElementsByTagName('h1')[0].innerHTML = 'Chế độ tối';
+					document.getElementsByTagName('h1')[0].style = 'color: white';
+					cheDo = "toi";
+				} else {
+					document.getElementsByTagName('body')[0].style = "background-color: white";
+					document.getElementsByTagName('img')[0].src = 'mattroi.jpg';
+					document.getElementsByTagName('h1')[0].innerHTML = 'Chế độ sáng';
+					document.getElementsByTagName('h1')[0].style = 'color: black';
+					cheDo = "sang";
+				}
+			}
+		</script>
+	</body>
+</html>

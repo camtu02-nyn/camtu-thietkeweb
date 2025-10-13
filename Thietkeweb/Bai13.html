@@ -1,0 +1,375 @@
+<html>
+
+<head>
+	<title>JavaScript</title>
+</head>
+
+<body>
+	<script src="script.js"></script>
+
+	<script>
+		document.writeln("xin chào! <br>");
+		document.writeln("chào zề! <br>");
+
+		var hoTen = "Lê Thị Cẩm Tú";
+		document.writeln(hoTen + "<br>");
+		var soThuNhat = 10;
+		var soThuHai = 5;
+		var tong = soThuNhat + soThuHai;
+		document.writeln("Đây là kết quả tính tổng: ", tong + "<br>");
+		var hieu = soThuNhat - soThuHai;
+		document.writeln("Đây là kết quả tính hiệu: ", hieu + "<br>");
+		var tich = soThuNhat * soThuHai;
+		document.writeln("Đây là kết quả tính tích: ", tich + "<br>");
+		var thuong = soThuNhat / soThuHai;
+		document.writeln("Đây là kết quả tính thương: ", thuong + "<br>");
+
+		var ketQua = soThuNhat % soThuHai;
+		document.writeln(ketQua + "<br>");
+
+		var xeOTo = {
+			tenHang: "Vinfast",
+			loai: "VF3",
+			namSanXuat: 2020,
+			namMua: 2023,
+			daBan: true,
+			noiSanXuat: {
+				thanhPho: "Hải Phòng",
+				phuong: "...",
+			}
+		}
+		var namNay = 2025
+		document.writeln("Bạn "
+			+ hoTen
+			+ " đi xe " + xeOTo.loai
+			+ " " + xeOTo.tenHang
+			+ " mua xe đi được " + (namNay - xeOTo.namMua) + " năm"
+			+ "<br>"
+		);
+
+
+
+		//String(chuỗi): chữ, text ở đầu cuối có ""
+		// number : không cần dấu
+		// object:
+		//let tên biến = {
+		//key: value,
+		//key: value
+		//}
+
+		// String
+		//1. thay thế kí tự trong chuỗi: replace("ký tự muốn thay thế","thay thế=gì")
+		let ten = "Le Thi Cam Tu";
+		document.writeln(ten + "<br>");
+		document.writeln(ten.replace("Le", "Vuong") + "<br>");
+
+		// 2. tìm kiếm trong chuỗi
+		// includes("ký tự muốn tìm")
+		document.writeln(ten.includes("Anh") + "<br>");
+
+		//3. Date
+		let toDay = new Date()
+		document.writeln(toDay + "<br>");
+
+		let yesterday = new Date("2025-9-25")
+		document.writeln(yesterday + "<br>");
+
+		// lấy ra năm: getFullYears()
+		// lấy ra tháng: getMonth()
+		// lấy ra ngày: getDate()
+		// lấy ra thứ trong tuần : getDay()
+
+		// Mảng: array
+		let daySo = [1, 2, 3, 4, 5, 6, 7];
+		document.writeln(daySo + "<br>");
+		let hoaQua = ["Cam", "Quýt", "Dừa", "Dưa hấu"]
+		document.writeln(hoaQua[2] + "<br>");
+
+		//vòng lặp for
+		for (let i = 0; i < hoaQua.length; i++) {
+			document.writeln(i, hoaQua[i] + "<br>");
+		}
+		// câu điều kiện if else else if
+		let thoiTiet = "Mưa";
+		if (thoiTiet == "Mưa") {
+			document.writeln("  thì...thì...thì phải chịu <br>");
+		}
+		else {
+			document.writeln("Đi học");
+		}
+
+		//điểm
+		//điểm: 8-10: A
+		//điểm: 7-8: B
+		//điểm: 5-7: C
+		//điểm: 4-5: D 
+		//điểm: <4: F
+
+		// tổng = A*0.6 + B*0.3 + C*0.1
+		let diemA = 10;
+		let diemB = 6;
+		let diemC = 9;
+		if ((diemA < 0 || diemA > 10)
+			|| (diemB < 0 || diemB > 10)
+			|| (diemC < 0 || diemC > 10)) {
+			document.writeln(" Điểm nhập vào bị sai - mời nhập lại");
+		}
+		else {
+			let diem = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+			document.writeln("Điểm A: " + diemA + "<br>");
+			document.writeln("Điểm B: " + diemB + "<br>");
+			document.writeln("Điểm C: " + diemC + "<br>");
+			document.writeln("Điểm tổng: " + diem + "<br>");
+
+			if (diem >= 9 && diem <= 10) {
+				document.writeln(" Điểm chữ: A+");
+			}
+			else if (diem >= 8.5 && diem < 9) {
+				document.writeln("Điểm chữ: A");
+			}
+			else if (diem >= 8 && diem < 8.5) {
+				document.writeln("Điểm chữ: B+");
+			}
+			else if (diem >= 7 && diem < 8) {
+				document.writeln("Điểm chữ: B");
+			}
+			else if (diem >= 6.5 && diem < 7) {
+				document.writeln("Điểm chữ: C+");
+			}
+			else if (diem >= 5.5 && diem < 6.5) {
+				document.writeln("Điểm chữ: C");
+			}
+			else if (diem >= 5 && diem < 5.5) {
+				document.writeln("Điểm chữ: D+");
+			}
+			else if (diem >= 4 && diem < 5) {
+				document.writeln("Điểm chữ: D");
+			}
+			else if (diem >= 0 && diem < 4) {
+				document.writeln("Điểm chữ: F");
+			}
+			else {
+				document.writeln("điểm nhập vào không hợp lệ");
+			}
+		}
+	</script>
+	<!-- // bài 1: cải tiến lại bài tính điểm: hiển thị đúng điểm chữ , điểm thành phần nếu sai thì cảnh báo ra màn hình -->
+	<!-- // bài 2: lấy thời gian hiện tại : kiểm tra  -->
+	<!-- // hiển thị số tiết tương ứng với giờ hiện tại -->
+	<!-- // 6-7h tiết 1: -->
+	<!-- // 7-8 tiết 2: -->
+	<!-- // quá 20h or nhỏ hơn 6h : không có tiết học -->
+
+	<script>
+		let hienTai = new Date();
+		let gio = hienTai.getHours();
+		document.writeln("<br> Bây giờ là: " + gio + " giờ " + "<br>");
+
+		if (gio >= 6 && gio < 7) {
+			document.writeln("Đang là tiết 1 (6h - 7h)");
+		}
+		else if (gio >= 7 && gio < 8) {
+			document.writeln("Đang là tiết 2 (7h - 8h)");
+		}
+		else if (gio >= 8 && gio < 9) {
+			document.writeln("Đang là tiết 3 (8h - 9h)");
+		}
+		else if (gio >= 9 && gio < 10) {
+			document.writeln("Đang là tiết 4 (9h - 10h)");
+		}
+		else if (gio >= 10 && gio < 11) {
+			document.writeln("Đang là tiết 5 (10h - 11h)");
+		}
+		else if (gio >= 11 && gio < 12) {
+			document.writeln("Đang là tiết 6 (11h - 12h)");
+		}
+		else if (gio >= 12 && gio < 13) {
+			document.writeln("Đang là thời gian nghỉ trưa");
+		}
+		else if (gio >= 13 && gio < 14) {
+			document.writeln("Đang là tiết 7 (13h - 14h)");
+		}
+		else if (gio >= 14 && gio < 15) {
+			document.writeln("Đang là tiết 8 (14h - 15h)");
+		}
+		else if (gio >= 15 && gio < 16) {
+			document.writeln("Đang là tiết 9 (15h - 16h)");
+		}
+		else if (gio >= 16 && gio < 17) {
+			document.writeln("Đang là tiết 10 (16h - 17h)");
+		}
+		else if (gio >= 17 && gio < 18) {
+			document.writeln("Đang là tiết 11 (17h - 18h)");
+		}
+		else if (gio >= 18 && gio < 19) {
+			document.writeln("Đang là tiết 12 (18h - 19h)");
+		}
+		else if (gio >= 19 && gio < 20) {
+			document.writeln("Đang là tiết 13 (19h - 20h)");
+		}
+		else {
+			document.writeln("Hiện tại không có tiết học (ngoài 6h - 20h)");
+		}
+
+	</script>
+
+	<script>
+		// POPUP BOXES
+		//alert("xin chào");// thông báo trên trình duyệt
+		//let result = confirm ("Press a button");
+		//document.writeln(result);
+		//if (result == true) {
+		//	document.write("You Pressed Ok")
+		//}
+		//else {
+		//document.write("You Pressed Cancel")
+		//}
+
+		//let result2 = prompt("Test", "type here");
+		//document.writeln(result2);
+	</script>
+
+	<script>
+		// FUNCTIONS
+		// hàm không tham số
+		function sayHello() {
+			document.writeln("<br> xin chào");
+		}
+
+		sayHello();// gọi hàm, gọi bao nhiêu lần chạy bấy nhiêu lần
+
+		// hàm có tham số
+		function sayHello2(name) {
+			document.writeln("<br> xin chào " + name);
+		}
+		sayHello2("Cẩm Tú");
+		sayHello2("Nguyễn Yến");
+		document.writeln("<br>");
+	</script>
+	<form action="">
+		Điểm A: <input id="A" class="diemA" placeholder="Nhập điểm A"> <br>
+		Điểm B: <input id="B" class="diemB" placeholder="Nhập điểm B"> <br>
+		Điểm C: <input id="C" class="diemC" placeholder="Nhập điểm C"> <br>
+		<button onclick="test()"> Xem kết quả </button>
+	</form>
+	<script>
+		function test() {
+			let diemA = parseFloat(document.getElementById("A").value);
+			let diemB = parseFloat(document.getElementById("B").value);
+			let diemC = parseFloat(document.getElementById("C").value);
+			tinhDiem(diemA, diemB, diemC)
+		}
+		function tinhDiem(diemA, diemB, diemC) {
+			if ((diemA < 0 || diemA > 10)
+				|| (diemB < 0 || diemB > 10)
+				|| (diemC < 0 || diemC > 10)) {
+				document.writeln("Điểm nhập vào bị sai - mời nhập lại");
+			}
+			else {
+				let diem = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+				document.writeln("Điểm A: " + diemA + "<br>");
+				document.writeln("Điểm B: " + diemB + "<br>");
+				document.writeln("Điểm C: " + diemC + "<br>");
+				document.writeln("Điểm tổng: " + diem + "<br>");
+
+				if (diem >= 9 && diem <= 10) {
+					document.writeln("Điểm chữ: A+");
+				}
+				else if (diem >= 8.5) {
+					document.writeln("Điểm chữ: A");
+				}
+				else if (diem >= 8) {
+					document.writeln("Điểm chữ: B+");
+				}
+				else if (diem >= 7) {
+					document.writeln("Điểm chữ: B");
+				}
+				else if (diem >= 6.5) {
+					document.writeln("Điểm chữ: C+");
+				}
+				else if (diem >= 5.5) {
+					document.writeln("Điểm chữ: C");
+				}
+				else if (diem >= 5) {
+					document.writeln("Điểm chữ: D+");
+				}
+				else if (diem >= 4) {
+					document.writeln("Điểm chữ: D");
+				}
+				else {
+					document.writeln("Điểm chữ: F");
+				}
+			}
+		}
+	</script>
+
+	<!-- // tạo hàm xin chào ( sử dụng lại sayHello) -->
+	<!-- // tạo 1 giao diện có input cho người dùng nhập tên vào -->
+	<!-- // 1 nút bấm xin chào, khi người dùng bấm vào nút sẽ hiển thị xin chào + tên người dùng ở ô input -->
+	<!-- // bài 1 : sử dụng IF ELSE kiểm tra người dùng có nhập vào tên hay không -->
+	<!-- // nếu không thì cảnh cáo vui lòng nhập lại tên -->
+	<!-- // nếu có thì in ra xin chào như trên -->
+	<h2>Chương trình Xin chào</h2>
+	<form>
+		<input type="text" id="name" placeholder="Nhập tên của bạn"> <br>
+		<button onclick="sayHello2()">Xin chào</button>
+	</form>
+	<script>
+		function sayHello2(name) {
+			let ten = document.getElementById("name").value;
+
+			if (ten == "" || !isNaN(ten)) {
+				alert("Vui lòng nhập lại tên!");
+			}
+			else {
+				document.writeln("<br> xin chào " + ten);
+			}
+		}
+	</script>
+	<!-- // bài 2 tạo 2 ô input cho người dùng nhập số(type=number); -->
+	<!-- // tạo 4 button cộng trừ nhân chia -->
+	<!-- // khi người dùng nhập vào 2 số bấm vào button sẽ hiển thị kq tương ứng -->
+
+	<h2>Máy tính đơn giản</h2>
+		<!-- 2 ô nhập số -->
+		<input type="number" id="so1" placeholder="Nhập số thứ 1"> <br><br>
+		<input type="number" id="so2" placeholder="Nhập số thứ 2"> <br><br>
+
+		<!-- 4 nút bấm -->
+		<button onclick="tinh('cong')">Cộng</button>
+		<button onclick="tinh('tru')">Trừ</button>
+		<button onclick="tinh('nhan')">Nhân</button>
+		<button onclick="tinh('chia')">Chia</button>
+		<br>
+		Kết Quả: <input id="ketqua"></input>
+
+	<script>
+		function tinh(dau) {
+			let a = parseFloat(document.getElementById("so1").value);
+			let b = parseFloat(document.getElementById("so2").value);
+			let kq;
+			if(dau == 'cong'){
+				kq = a + b;
+			}
+			else if(dau == 'tru'){
+				kq = a - b;
+			}
+			else if(dau == 'nhan'){
+				kq = a * b;
+			}
+			else{
+				if (b == 0) {
+				document.writeln("<br> Không thể chia cho 0");
+				} else {
+					kq = a / b;
+				}
+			}
+			document.getElementById("ketqua").value = kq;
+		}
+
+	</script>
+
+
+</body>
+
+</html>
