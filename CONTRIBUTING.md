@@ -89,3 +89,7 @@ Chào Cẩm Tú tôi vừa thêm 1 file spotify
 Chúc bạn sẽ có thêm nhiều dự án hay và bổ ích hơn
 Cảm ơn bạn rất nhiều vì đã chia sẻ mã nguồn mở cho chúng tôi 
 contributed by Huy Do Quang 
+# Hung Tran Cong:
+Cảm ơn Tú đã share dự án này cho mọi người cùng xem, học hỏi và chỉnh sửa. Tôi đã sửa 1 số bug không hiển thị ảnh trong baif7_fpt play của bạn.
+Chúc bạn một ngày vui vẻ và tràn đầy năng lượng.
+Contributed by Hung Tran Cong.
