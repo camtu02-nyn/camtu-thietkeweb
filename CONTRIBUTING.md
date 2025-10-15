@@ -84,3 +84,8 @@ Nếu bạn có câu hỏi hoặc đề xuất, hãy mở một [Issue](https://
 
 Cùng nhau xây dựng một cộng đồng học lập trình web mạnh mẽ và thân thiện! 💙
 Cảm ơn mọi người rất nhiều ạ!
+# Đỗ Quang Huy
+Chào Cẩm Tú tôi vừa thêm 1 file spotify 
+Chúc bạn sẽ có thêm nhiều dự án hay và bổ ích hơn
+Cảm ơn bạn rất nhiều vì đã chia sẻ mã nguồn mở cho chúng tôi 
+contributed by Huy Do Quang 
