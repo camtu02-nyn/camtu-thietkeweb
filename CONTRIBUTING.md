@@ -84,7 +84,7 @@ Nếu bạn có câu hỏi hoặc đề xuất, hãy mở một [Issue](https://
 
 Cùng nhau xây dựng một cộng đồng học lập trình web mạnh mẽ và thân thiện! 💙
 Cảm ơn mọi người rất nhiều ạ!
-# Hung Tran Cong
+# Hung Tran Cong:
 Cảm ơn Tú đã share dự án này cho mọi người cùng xem, học hỏi và chỉnh sửa. Tôi đã sửa 1 số bug không hiển thị ảnh trong baif7_fpt play của bạn.
 Chúc bạn một ngày vui vẻ và tràn đầy năng lượng.
 Contributed by Hung Tran Cong.
