@@ -93,3 +93,8 @@ contributed by Huy Do Quang
 Cảm ơn Tú đã share dự án này cho mọi người cùng xem, học hỏi và chỉnh sửa. Tôi đã sửa 1 số bug không hiển thị ảnh trong baif7_fpt play của bạn.
 Chúc bạn một ngày vui vẻ và tràn đầy năng lượng.
 Contributed by Hung Tran Cong.
+# Duong Ngo Hoang:
+Cảm ơn Tú đã share dự án này cho mọi người cùng xem, học hỏi và chỉnh sửa. Tôi đã sửa bố cục và hoàn thiện bài bai8-ontap/index1.html của bạn.
+Tôi cũng đã hoàn thiện giúp bạn phần js trong bài bai12.html
+Cảm ơn bạn rất nhiều 
+Contributed by Duong Ngo Hoang

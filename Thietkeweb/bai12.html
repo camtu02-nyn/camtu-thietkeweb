@@ -163,20 +163,46 @@
 			</div>
 			<div class="main2">
 				<div class="main2-1">
-					<i><p class="note1"> Bạn chỉ cần điền thông tin, chùng tôi sẽ gọi điện lại ngay</p></i>
-					<p><b>Họ Tên</b></p>
-					<input type="text" class="create-box2"  placeholder="Nhập họ tên">
-					<p><b>Số điện thoại</b></p>
-					<input type="tel" class="create-box2"  placeholder="Nhập số điện thoại">
-					<p><b>Số Lượng</b></p>
-					<input type="number" class="create-box2"  placeholder="Nhập số lượng">
-					<p><b>Địa chỉ</b></p>
-					<input type="text" class="create-box2"  placeholder="Nhập địa chỉ">
-					<button class="border1">Đặt hàng</button>
+                <i>
+                    <p class="note1"> Bạn chỉ cần điền thông tin, chùng tôi sẽ gọi điện lại ngay</p>
+                </i>
+                <p><b>Họ Tên</b></p>
+                <input type="text" class="create-box2" placeholder="Nhập họ tên" id="hoten">
+                <p><b>Số điện thoại</b></p>
+                <input type="tel" class="create-box2" placeholder="Nhập số điện thoại" id="sodt">
+                <p><b>Số Lượng</b></p>
+                <input type="number" class="create-box2" placeholder="Nhập số lượng" id="soluong">
+                <p><b>Địa chỉ</b></p>
+                <input type="text" class="create-box2" placeholder="Nhập địa chỉ" id="diachi">
+                <button class="border1" onclick="kiemTra()">Đặt hàng</button>
 
-				</div>
-			</div>
-		
-		</main>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        function kiemTra() {
+            let hoten = document.getElementById("hoten").value;
+            let sodt = document.getElementById("sodt").value;
+            let soluong = document.getElementById("soluong").value;
+            let diachi = document.getElementById("diachi").value;
+            if (hoten == "" || sodt == "" || soluong == "" || diachi == "") {
+                alert("Vui lòng nhập đầy đủ thông tin");
+                return false;
+            }
+            else if (isNaN(sodt)) {
+                alert("Vui lòng nhập số điện thoại hợp lệ");
+                return false;
+            }
+            else if (isNaN(soluong) || soluong <= 0) {
+                alert("Vui lòng nhập số lượng hợp lệ");
+                return false;
+            }
+            else {
+                alert("Đặt hàng thành công");
+                return true;
+            }
+        }
+    </script>
 	</body>
 </html>
