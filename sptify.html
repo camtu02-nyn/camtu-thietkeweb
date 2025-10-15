@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>Đăng nhập spotify</title>
+    <style>
+		body {
+			background-image: linear-gradient(to bottom, rgb(46, 45, 45), rgb(20, 20, 19));
+			color: white;
+		}
+
+		.container {
+			width: 40%;
+			background-color: black;
+			margin: 50px auto;
+			border-radius: 15px;
+			padding: 40px 0;
+		}
+
+		.list-login{
+			width: 60%;
+			margin: auto;
+			text-align: center;
+			border-bottom: 1px solid grey;
+		}
+
+		.list-login-bottom {
+			width: 60%;
+			margin: auto;
+			border-bottom: 1px solid grey;
+		}
+
+		button {
+			width: 100%;
+			padding: 15px 0;
+			border: 1px solid white;
+			border-radius: 20px;
+			background-color: black;
+			color: white;
+			
+			margin: 10px 0;
+		}
+
+		.continue {
+			width: 100%;
+			padding: 15px 0;
+			border-radius: 25px;
+			background-color: green;
+			color: black;
+			border: none;
+			margin: 10px 0;
+		}
+
+		input {
+			width: 100%;
+			padding: 15px 10px;
+			border: 1px solid white;
+			border-radius: 5px;
+			background-color: black;
+			color: white;
+			margin: 10px 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="list-login">
+            <h1>Login to Spotify</h1>
+            <div style="width: 80%; margin: auto;">
+                <div class="method">
+                    <button onclick="dangNhap('google')" id="nut1">Continue with Goolge</button>
+                </div>
+                <div class="method">
+                    <button onclick="dangNhap('facebook')" id="nut2">Continue with Facebook</button>
+                </div>
+                <div class="method">
+                    <button onclick="dangNhap('apple')" id="nut3">Continue with Apple</button>
+                </div>
+                <div class="method" style="margin-bottom: 20px;">
+                    <button onclick="dangNhap('number')" id="nut4">Continue with phone number</button>
+                </div>
+            </div>
+        </div>
+        <div class="list-login-bottom" style="border: none;">
+            <div style="width: 80%; margin: auto;">
+                <div class="method">
+                    <p style="margin-bottom: 5px;">Email or username</p>
+                    <input placeholder="Email or username"></input>
+                </div>
+                <div class="method">
+                    <button class="continue" onclick="click1()" id="continue">Continue</button>
+                </div>
+                <p style="text-align: center;">Don't have an acount? <a href="#">Sign up for Sportify</a></p>
+            </div>
+        </div>
+    </div>
+	<script>
+		function dangNhap(trang){
+			if (trang == 'google'){
+				alert('Đăng nhập bằng google')
+			}
+			else if (trang == 'facebook'){
+				alert('Đăng nhập bằng facebook ')
+			}
+			else if (trang == 'apple'){
+				alert('Đăng nhập bằng apple')
+			}
+			else{
+				alert('Đăng nhập bằng number')
+			}
+		};
+		
+		function click1(){
+			let a = prompt('Nhap mat khau : ')
+			if (a==''){
+				alert('Vui lòng nhập mật khẩu')
+			}
+			else if(a == '123') {
+				alert('Đăng nhập thành công')
+			}
+			else{
+				alert('Nhập mật khẩu sai')
+			}
+		}
+	</script>
+</body>
+
+</html>
